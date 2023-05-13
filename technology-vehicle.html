@@ -4,13 +4,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
-  <link rel="stylesheet" href="../dist/css/Style.css" />
+  <link rel="stylesheet" href="./Style.css" />
 
   <title>Frontend Mentor | Space tourism website</title>
 </head>
 
-<body class="desc_sec">
+<body class="desc_sec desc_sec2 ">
   <header>
     <div class="header">
       <img src="./assets/shared/logo.svg" alt="Logo" />
@@ -34,18 +35,17 @@
       <img src="./assets/shared/icon-close.svg" alt="icon-close" class="close" />
     </nav>
   </header>
-  <p class="travel"><span> 01 </span> Pick your destination</p>
-  <div class="destination_img section_img"></div>
-  <ul class="destination_menu">
-    <li><a>Moon</a></li>
-    <li><a>Mars</a></li>
-    <li><a>Europa</a></li>
-    <li><a>Titan</a></li>
-  </ul>
-  <div class="sections_destination sections"></div>
+  <p class="travel"><span> 03 </span> Space launch 101</p>
+  <div class="tech_img section_img"></div>
+  <div class="nums">
+    <div class="num" data-tech="vehicle">1</div>
+    <div class="num" data-tech="spaceport">2</div>
+    <div class="num" data-tech="capsule">3</div>
+  </div>
+  <div class="sections_tech "></div>
 
+  <script src="./JS/Tech.js"></script>
 
-  <script src="./JS/App.js" type="module"></script>
 </body>
 
 </html>

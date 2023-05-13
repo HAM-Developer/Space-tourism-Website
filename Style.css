@@ -41,7 +41,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url(" /starter-code/assets/home/background-home-mobile.jpg");
+  background-image: url("./assets/home/background-home-mobile.jpg");
   height: 100vh;
 }
 
@@ -162,7 +162,7 @@ section .explore:hover {
 
 @media screen and (min-width: 768px) {
   .index_sec {
-    background-image: url("/starter-code/assets/home/background-home-tablet.jpg");
+    background-image: url("./assets/home/background-home-tablet.jpg");
   }
   .header {
     padding: 2rem;
@@ -221,7 +221,7 @@ section .explore:hover {
 
 @media screen and (min-width: 1440px) {
   .index_sec {
-    background-image: url("/starter-code/assets/home/background-home-desktop.jpg");
+    background-image: url("./assets/home/background-home-desktop.jpg");
   }
   .menu {
     right: 0;
@@ -259,7 +259,7 @@ section .explore:hover {
 }
 
 .desc_sec {
-  background-image: url("/starter-code/assets/destination/background-destination-mobile.jpg");
+  background-image: url("./assets/destination/background-destination-mobile.jpg");
 }
 
 ul.destination_menu {
@@ -348,7 +348,7 @@ ul.destination_menu a:active {
 }
 @media screen and (min-width: 768px) {
   .desc_sec {
-    background-image: url("/starter-code/assets/destination/background-destination-tablet.jpg");
+    background-image: url("./assets/destination/background-destination-tablet.jpg");
   }
   .desc_sec .sub_sec {
     margin: 0;
@@ -385,7 +385,7 @@ ul.destination_menu a:active {
 
 @media screen and (min-width: 1440px) {
   .desc_sec {
-    background-image: url("/starter-code/assets/destination/background-destination-desktop.jpg");
+    background-image: url("./assets/destination/background-destination-desktop.jpg");
   }
   .desc_sec section {
     margin-top: 5%;
@@ -430,7 +430,7 @@ ul.destination_menu a:active {
 }
 
 .desc_sec1 {
-  background-image: url("/starter-code/assets/crew/background-crew-mobile.jpg");
+  background-image: url("./assets/crew/background-crew-mobile.jpg");
 }
 
 .dots {
@@ -482,7 +482,7 @@ ul.destination_menu a:active {
 
 @media screen and (min-width: 768px) {
   .desc_sec1 {
-    background-image: url("/starter-code/assets/crew/background-crew-tablet.jpg");
+    background-image: url("./assets/crew/background-crew-tablet.jpg");
   }
   .desc_sec1 .travel1 {
     font-size: 1.25rem;
@@ -511,7 +511,7 @@ ul.destination_menu a:active {
 
 @media screen and (min-width: 1440px) {
   .desc_sec1 {
-    background-image: url("/starter-code/assets/crew/background-crew-desktop.jpg");
+    background-image: url("./assets/crew/background-crew-desktop.jpg");
   }
   .desc_sec1 .sub_secs {
     width: 100%;
@@ -558,7 +558,7 @@ ul.destination_menu a:active {
 }
 
 .desc_sec2 {
-  background-image: url("/starter-code/assets/technology/background-technology-mobile.jpg");
+  background-image: url("./assets/technology/background-technology-mobile.jpg");
 }
 
 .desc_sec2 section {
@@ -607,7 +607,7 @@ ul.destination_menu a:active {
 
 @media screen and (min-width: 768px) {
   .desc_sec2 {
-    background-image: url("/starter-code/assets/technology/background-technology-tablet.jpg");
+    background-image: url("./assets/technology/background-technology-tablet.jpg");
   }
   .desc_sec2 h3 {
     font-size: 1rem;
@@ -622,7 +622,7 @@ ul.destination_menu a:active {
 
 @media screen and (min-width: 1440px) {
   .desc_sec2 {
-    background-image: url("/starter-code/assets/technology/background-technology-desktop.jpg");
+    background-image: url("./assets/technology/background-technology-desktop.jpg");
   }
   .desc_sec2 section {
     padding-left: 10%;

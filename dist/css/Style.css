@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   overflow-x: hidden;
 }
 
@@ -19,11 +19,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .header img {
@@ -42,19 +42,21 @@ body {
   background-size: cover;
   background-position: center;
   background-image: url(" /starter-code/assets/home/background-home-mobile.jpg");
+  height: 100vh;
 }
 
 .menu {
   position: absolute;
   top: 0;
   right: 0;
-  width: 70%;
+  width: 16rem;
   height: 100%;
   background-color: #494669;
   -webkit-transform: translateX(100%);
-          transform: translateX(100%);
-  -webkit-transition: all 0.5s ease-out;
+  transform: translateX(100%);
+  -webkit-transition: all 0.35s ease-out;
   transition: all 0.5s ease-out;
+  z-index: 100;
 }
 
 .menu ul {
@@ -88,25 +90,37 @@ body {
 
 .open_menu {
   -webkit-transform: translate(0%);
-          transform: translate(0%);
+  transform: translate(0%);
 }
-
+.section_img {
+  display: flex;
+  width: 400%;
+  position: relative;
+  left: 0%;
+  transition: all 0.25s ease-out;
+}
+.destination_img .sub_sec,
+.crew_img .sub_sec {
+  text-align: center;
+  margin: auto;
+}
 section {
   text-align: center;
-  margin: 2rem auto 0 auto;
+  margin: 0 auto;
   background-position: center;
   background-repeat: no-repeat;
   width: 90%;
 }
 
-section .travel {
+.travel {
   letter-spacing: 2.7px;
   text-transform: uppercase;
-  margin: 1rem 0;
+  margin: 1rem auto;
+  text-align: center;
   color: white;
 }
 
-section .travel span {
+.travel span {
   color: #d1d7fa;
 }
 
@@ -116,7 +130,9 @@ section h1 {
   font-family: "Bellefair", serif;
   font-weight: 100;
 }
-
+.destination_section {
+  margin-top: 0;
+}
 section p {
   font-size: 15px;
   margin: 1rem 0;
@@ -126,26 +142,20 @@ section p {
 
 section .explore {
   background-color: white;
-  padding: 3.8rem 0;
-  width: 45%;
+  padding: 4.75rem 0px;
+  width: 11.75rem;
+  font-family: "Bellefair", serif;
   margin: 4rem auto;
   border-radius: 50%;
-  list-style: none;
-  text-align: center;
-  cursor: pointer;
-}
-
-section .explore a {
   text-transform: uppercase;
-  font-family: "Bellefair", serif;
-  text-decoration: none;
   color: #0c0e18;
+  cursor: pointer;
   font-size: 1.25rem;
 }
 
 section .explore:hover {
   -webkit-box-shadow: 0px 0px 0px 50px #9797978e;
-          box-shadow: 0px 0px 0px 50px #9797978e;
+  box-shadow: 0px 0px 0px 50px #9797978e;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
@@ -164,7 +174,7 @@ section .explore:hover {
     top: 1%;
     right: 1%;
     -webkit-transform: translateX(0%);
-            transform: translateX(0%);
+    transform: translateX(0%);
     background-color: #9797971f;
     height: auto;
     width: auto;
@@ -194,25 +204,18 @@ section .explore:hover {
   section h1 {
     font-size: 150px;
   }
-  section .travel {
+  .travel {
     max-width: 42%;
   }
-  section p.travel {
+  p.travel {
     font-size: 1.25rem;
+    text-align: center;
+    margin: 1rem auto;
   }
   section p.desc {
     width: 67%;
     margin: auto;
     font-size: 1rem;
-  }
-  section .explore {
-    border-radius: 0;
-    padding: 6.75rem 0;
-    border-radius: 50%;
-    width: 40%;
-  }
-  section .explore a {
-    font-size: 32px;
   }
 }
 
@@ -229,11 +232,11 @@ section .explore:hover {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     width: 60%;
     margin-left: 10%;
   }
@@ -250,9 +253,6 @@ section .explore:hover {
     margin: 0;
   }
   section .explore {
-    float: right;
-    width: 25%;
-    padding: 7.4rem 0;
     z-index: 2;
     margin-right: 1rem;
   }
@@ -262,42 +262,39 @@ section .explore:hover {
   background-image: url("/starter-code/assets/destination/background-destination-mobile.jpg");
 }
 
-.desc_sec section img {
-  width: 60%;
-}
-
-.desc_sec section ul {
-  width: 70%;
+ul.destination_menu {
+  width: 15rem;
   height: auto;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
-.desc_sec section ul li {
+ul.destination_menu li {
   list-style: none;
   padding: 1rem 0;
 }
 
-.desc_sec section ul a {
+ul.destination_menu a {
   padding: 0.9rem 0;
   text-decoration: none;
   color: #d1d7fa;
+  cursor: pointer;
 }
 
-.desc_sec section ul a:hover {
+ul.destination_menu a:hover {
   color: white;
   border-bottom: 2px solid white;
 }
 
-.desc_sec section ul a:active {
+ul.destination_menu a:active {
   color: white;
   border-bottom: 2px solid white;
 }
@@ -324,7 +321,10 @@ section .explore:hover {
   font-family: "Barlow Condensed", sans-serif;
   margin: 1rem;
 }
-
+.destination_img img,
+.crew_img img {
+  max-width: 19.5rem;
+}
 .desc_sec section .distance .dis2 {
   font-family: "Bellefair", serif;
   font-size: 2.4rem;
@@ -332,37 +332,50 @@ section .explore:hover {
   height: 5.5vh;
   color: white;
 }
-
+.sections {
+  display: flex;
+  width: 400%;
+  position: relative;
+  left: 0;
+  transition: all 0.25s ease-out;
+}
+.sections_tech {
+  display: flex;
+  width: 300%;
+  position: relative;
+  left: 0;
+  transition: all 0.25s ease-out;
+}
 @media screen and (min-width: 768px) {
   .desc_sec {
     background-image: url("/starter-code/assets/destination/background-destination-tablet.jpg");
   }
   .desc_sec .sub_sec {
     margin: 0;
+    width: 100%;
+    text-align: center;
   }
   .desc_sec .sub_sec p {
     font-size: 1rem;
+    margin: 1rem 0;
   }
-  .desc_sec section img {
-    width: 50%;
-  }
-  .desc_sec section ul {
-    width: 40%;
+  ul.destination_menu {
+    width: 15rem;
   }
   .desc_sec section .sub_Sec2 {
-    width: 75%;
+    width: 35rem;
   }
   .desc_sec section .distance {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    width: 60%;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 35rem;
     margin: 1rem auto 0 auto;
   }
   .desc_sec section .distance .dis2 {
@@ -377,10 +390,10 @@ section .explore:hover {
   .desc_sec section {
     margin-top: 5%;
   }
-  .desc_sec section .travel {
+  .desc_sec .travel {
     font-size: 1.4rem;
   }
-  .desc_sec section img {
+  .desc_sec .sections_destination img {
     float: left;
     width: 70%;
     margin-top: 15%;
@@ -391,7 +404,7 @@ section .explore:hover {
     float: right;
     margin-top: 5%;
   }
-  .desc_sec section ul {
+  ul.destination_menu {
     margin: 0;
     width: 45%;
   }
@@ -420,14 +433,10 @@ section .explore:hover {
   background-image: url("/starter-code/assets/crew/background-crew-mobile.jpg");
 }
 
-.desc_sec1 section .dots1,
-.desc_sec1 section .dots2 {
-  border-top: 1px solid white;
-  padding: 1rem;
+.dots {
+  text-align: center;
 }
-
-.desc_sec1 section .dots1 .dot,
-.desc_sec1 section .dots2 .dot {
+.dots .dot {
   width: 0.5rem;
   height: 0.5rem;
   border-radius: 0.25rem;
@@ -436,18 +445,11 @@ section .explore:hover {
   display: inline-block;
   cursor: pointer;
 }
-
-.desc_sec1 section .dots1 .dot:hover,
-.desc_sec1 section .dots2 .dot:hover {
+.dots .dot:hover {
   background-color: white;
 }
 
-.desc_sec1 section .dots1 .dots2,
-.desc_sec1 section .dots2 .dots2 {
-  display: none;
-}
-
-.desc_sec1 section h3 {
+.crew_section h3 {
   color: #d1d7fa;
   font-weight: 100;
   font-family: "Bellefair", serif;
@@ -455,18 +457,18 @@ section .explore:hover {
   margin: 0.5rem;
 }
 
-.desc_sec1 section h2 {
+.crew_section h2 {
   color: white;
   font-weight: 100;
   font-family: "Bellefair", serif;
   text-transform: uppercase;
 }
 
-.desc_sec1 section .crew2 {
+.desc_sec .crew2 {
   display: none;
 }
 
-.desc_sec1 section .travel1 {
+.desc_sec1 .travel1 {
   width: 100%;
   letter-spacing: 2.7px;
   text-transform: uppercase;
@@ -474,7 +476,7 @@ section .explore:hover {
   color: white;
 }
 
-.desc_sec1 section .travel1 span {
+.desc_sec1 .travel1 span {
   color: #d1d7fa;
 }
 
@@ -482,31 +484,25 @@ section .explore:hover {
   .desc_sec1 {
     background-image: url("/starter-code/assets/crew/background-crew-tablet.jpg");
   }
-  .desc_sec1 section .travel1 {
+  .desc_sec1 .travel1 {
     font-size: 1.25rem;
   }
-  .desc_sec1 section h3 {
+  .crew_section h3 {
     font-size: 1.5rem;
-    margin-top: 3rem;
+    margin-top: 0;
   }
-  .desc_sec1 section h2 {
+  .crew_section h2 {
     font-size: 2.5rem;
   }
-  .desc_sec1 section .p1 {
-    width: 65%;
-    margin: 1rem auto;
-  }
-  .desc_sec1 section .crew1 {
+  .crew1 {
     display: none;
   }
-  .desc_sec1 section .crew2 {
+  .crew2 {
     display: block;
     margin: auto;
   }
-  .desc_sec1 section .dots1 {
-    display: none;
-  }
-  .desc_sec1 section .dots2 {
+
+  .dots {
     border-top: 0;
     display: block;
     margin-bottom: 1rem;
@@ -517,45 +513,39 @@ section .explore:hover {
   .desc_sec1 {
     background-image: url("/starter-code/assets/crew/background-crew-desktop.jpg");
   }
-  .desc_sec1 section .sub_secs {
+  .desc_sec1 .sub_secs {
     width: 100%;
   }
-  .desc_sec1 section .travel1 {
+  .desc_sec1 .travel1 {
     width: 100%;
     letter-spacing: 2.7px;
     text-transform: uppercase;
     margin: 1rem 0;
     color: white;
   }
-  .desc_sec1 section .travel1 span {
+  .desc_sec1 .travel1 span {
     color: #d1d7fa;
   }
-  .desc_sec1 section h3 {
+  .crew_section h3 {
     font-size: 2rem;
     margin: 30% 0 2% 0;
   }
-  .desc_sec1 section h2 {
+  .crew_section h2 {
     font-size: 3.5rem;
     width: 100%;
   }
-  .desc_sec1 section .dots2 {
+  .dots {
     padding-left: 0;
     margin-top: 16%;
   }
-  .desc_sec1 section .dots2 .dot {
+  .dots .dot {
     width: 0.7rem;
     height: 0.7rem;
     border-radius: 0.35rem;
     margin: 0.8rem;
   }
-  .desc_sec1 section .dots2 > .dot {
+  .dots > .dot {
     margin-left: 0;
-  }
-  .desc_sec1 section .p1 {
-    margin: 2rem 0 1rem 0;
-    font-size: 1.125rem;
-    width: 80%;
-    font-weight: 100;
   }
   .desc_sec1 .sec1 {
     float: left;
@@ -576,7 +566,7 @@ section .explore:hover {
   width: 100%;
 }
 
-.desc_sec2 section .tech2 {
+.desc_sec2 .tech2 {
   display: none;
 }
 
@@ -589,12 +579,17 @@ section .explore:hover {
   width: 80%;
   margin: 2rem auto;
 }
-
-.desc_sec2 .sub_secs img {
+.desc_sec .sec1 {
+  width: 100vw;
+}
+.desc_sec2 .tech_img img {
   width: 100%;
 }
 
-.desc_sec2 .nums .num {
+.nums {
+  text-align: center;
+}
+.nums .num {
   border: 1px solid white;
   width: 3rem;
   padding: 0.85rem 1rem;
@@ -603,8 +598,7 @@ section .explore:hover {
   margin: 2rem 0.5rem;
   cursor: pointer;
 }
-
-.desc_sec2 .nums .num:hover {
+.nums .num:hover {
   background-color: white;
   color: #0c0e18;
   -webkit-transition: all 0.35s ease-in-out;
@@ -615,13 +609,13 @@ section .explore:hover {
   .desc_sec2 {
     background-image: url("/starter-code/assets/technology/background-technology-tablet.jpg");
   }
-  .desc_sec2 section h3 {
+  .desc_sec2 h3 {
     font-size: 1rem;
   }
-  .desc_sec2 section h2 {
+  .desc_sec2 h2 {
     font-size: 2.4rem;
   }
-  .desc_sec2 section .p1 {
+  .desc_sec2 .p1 {
     width: 55%;
   }
 }
@@ -633,11 +627,11 @@ section .explore:hover {
   .desc_sec2 section {
     padding-left: 10%;
   }
-  .desc_sec2 section .tech2 {
+  .desc_sec2 .tech2 {
     display: inline-block;
     width: 40%;
     -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
     position: absolute;
     right: 0;
     top: 0;
@@ -656,12 +650,12 @@ section .explore:hover {
     margin-left: 15%;
     width: 70%;
   }
-  .desc_sec2 section .nums {
+  .nums {
     position: absolute;
     left: 10%;
     top: 45%;
   }
-  .desc_sec2 section .nums .num {
+  .nums .num {
     display: block;
     margin: 3rem 0;
   }

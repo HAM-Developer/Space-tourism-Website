@@ -1,5 +1,5 @@
 async function populate() {
-    const response = await fetch('http://127.0.0.1:5500/data.json', {
+    const response = await fetch('../data.json', {
         credentials: "include"
     });
     const webData = await response.json();
